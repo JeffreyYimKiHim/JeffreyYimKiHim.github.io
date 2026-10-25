@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&quot;Positioning a Swiss/US Quality-Value Equity List for the Warsh Hiking Cycle&quot; — Jeffrey Yim</title>
+<meta name="description" content="Haven Equities in a Rate Selloff Regime">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>&#9670;</text></svg>">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}else if(t==='light'){document.documentElement.removeAttribute('data-theme');}}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+    --serif-font: 'Spectral', Georgia, serif;
+    --sans-font: 'Jost', 'Helvetica Neue', Helvetica, sans-serif;
+    --dark-text-color: rgb(148, 148, 148);
+    --bullet-color: rgb(184, 184, 184);
+    --link-color: #52525b;
+    --link-background-color: #9191a07f;
+    --background-color: white;
+    --subtle-background-darker: rgb(252, 248, 243);
+    --border-background-color: #e0e0e0;
+    --code-background-color: rgb(245, 245, 245);
+    --color: black;
+    --nav-bg: rgba(255, 255, 255, 0.55);
+    --particle-color: rgba(120, 120, 135, 0.35);
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --dark-text-color: #949494;
+        --bullet-color: rgb(90, 90, 90);
+        --background-color: #121212;
+        --subtle-background-darker: rgb(23, 23, 23);
+        --border-background-color: #3b3d3e;
+        --code-background-color: #242424;
+        --link-background-color: #6b6b6b;
+        --link-color: rgb(161, 161, 161);
+        --color: rgb(200, 200, 200);
+        --nav-bg: rgba(18, 18, 18, 0.55);
+        --particle-color: rgba(140, 140, 150, 0.28);
+    }
+}
+html[data-theme="dark"] {
+    --dark-text-color: #949494;
+    --bullet-color: rgb(90, 90, 90);
+    --background-color: #121212;
+    --subtle-background-darker: rgb(23, 23, 23);
+    --border-background-color: #3b3d3e;
+    --code-background-color: #242424;
+    --link-background-color: #6b6b6b;
+    --link-color: rgb(161, 161, 161);
+    --color: rgb(200, 200, 200);
+    --nav-bg: rgba(18, 18, 18, 0.55);
+    --particle-color: rgba(140, 140, 150, 0.28);
+}
+* { box-sizing: border-box; }
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: var(--serif-font);
+    font-size: 17.5px;
+    line-height: 1.6;
+    margin: 0; padding: 0;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+#field { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.container { max-width: 650px; margin: 0 auto; padding: 20px 20px 40px 20px; position: relative; z-index: 1; }
+.site-nav-wrapper {
+    position: sticky; top: 0; z-index: 1000;
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px);
+    background-color: var(--nav-bg);
+    transition: background-color 0.35s ease;
+}
+.site-nav-inner { max-width: 650px; margin: 0 auto; padding: 18px 20px; display: flex; align-items: baseline; justify-content: space-between; gap: 1em; }
+.site-name { font-family: var(--sans-font); font-weight: 500; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color); text-decoration: none; border-bottom: none; }
+.site-nav { display: flex; align-items: baseline; gap: 1.15em; flex-wrap: wrap; justify-content: flex-end; }
+.site-nav a { font-family: var(--sans-font); font-size: 13.5px; color: var(--link-color); text-decoration: none; border-bottom: none; position: relative; }
+.site-nav a::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 100%; height: 1px; background: var(--color); transform: scaleX(0); transform-origin: left; transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1); }
+.site-nav a:hover::after { transform: scaleX(1); }
+#theme-toggle { background: none; border: none; cursor: pointer; font-family: var(--sans-font); font-size: 14px; color: var(--link-color); padding: 0 0 0 0.4em; line-height: 1; transition: transform 0.4s ease, color 0.3s ease; }
+#theme-toggle:hover { transform: rotate(30deg); color: var(--color); }
+h1, h2, h3 { font-family: var(--sans-font); font-weight: 500; }
+h1 { font-size: 1.9em; font-weight: 400; letter-spacing: -0.01em; margin: 0.2em 0 0.6em 0; }
+h2 { font-size: 13px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--dark-text-color); margin: 3.2em 0 1.1em 0; display: flex; align-items: center; gap: 0.9em; }
+h2::after { content: ""; flex: 1; height: 1px; background: var(--border-background-color); }
+h3 { font-size: 1.05em; margin: 0 0 0.15em 0; font-weight: 500; }
+p { margin: 0.6em 0; }
+.lede { font-size: 1.06em; }
+.dim { color: var(--dark-text-color); }
+.small { font-size: 0.86em; }
+a { font-weight: 400; text-decoration: none; color: var(--link-color); border-bottom: 0.1em solid var(--link-background-color); transition: all 0.3s; }
+a:hover { border-bottom: 0.1em solid var(--color); }
+blockquote { font-style: italic; background-color: var(--code-background-color); padding: 6px 20px; margin: 1.4em 0; border-left: 2px solid var(--border-background-color); border-radius: 8px; }
+ul { list-style-type: none; padding-left: 0; }
+ul > li { position: relative; padding-left: 1.2em; margin-bottom: 0.55em; }
+ul > li::before { content: "\2022"; color: var(--bullet-color); position: absolute; left: 0; top: 0.1em; font-size: 30px; line-height: 1; }
+ol { padding-left: 1.4em; }
+ol > li { margin-bottom: 0.7em; }
+ol > li::marker { color: var(--bullet-color); }
+.beliefs-list { column-count: 2; column-gap: 2rem; }
+.beliefs-list li { break-inside: avoid; }
+@media (max-width: 640px) { .beliefs-list { column-count: 1; } }
+.entry { margin-bottom: 1.6em; }
+.entry .meta { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dark-text-color); margin-bottom: 0.25em; }
+.entry .tag { display: inline-block; font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-text-color); border: 1px solid var(--border-background-color); border-radius: 3px; padding: 1px 7px; margin-left: 0.6em; vertical-align: 1px; }
+.entry p { margin: 0.35em 0 0 0; }
+article .meta { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dark-text-color); margin: 0.4em 0 1.6em 0; }
+article h2 { font-size: 1.25em; letter-spacing: 0; text-transform: none; color: var(--color); margin: 1.8em 0 0.5em 0; display: block; }
+article h2::after { content: none; }
+article h3 { font-size: 1.05em; margin: 1.4em 0 0.3em 0; }
+article p { margin: 0.8em 0; }
+article code { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 0.88em; background: var(--code-background-color); padding: 2px 6px; border-radius: 4px; }
+article img { max-width: 100%; border-radius: 6px; }
+article hr { border: none; height: 1px; background: var(--border-background-color); margin: 2.2em 0; }
+.back-link { font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.06em; border-bottom: none; color: var(--dark-text-color); }
+.back-link:hover { color: var(--color); border-bottom: none; }
+footer { margin-top: 5em; padding-top: 1.4em; border-top: 1px solid var(--border-background-color); font-family: var(--sans-font); font-size: 13px; color: var(--dark-text-color); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1em; }
+footer a { font-size: 13px; }
+.fade-up { opacity: 0; transform: translateY(1rem); transition: opacity 1.1s cubic-bezier(.22, 1, .36, 1), transform 1.1s cubic-bezier(.22, 1, .36, 1); }
+.fade-up.seen { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .fade-up { opacity: 1; transform: none; transition: none; } }
+@media (max-width: 768px) { body { font-size: 16.5px; } .site-nav-inner { padding: 14px 20px; } .site-nav { gap: 0.85em; } }
+</style>
+</head>
+<body>
+<div class="site-nav-wrapper">
+    <div class="site-nav-inner">
+        <a class="site-name" href="/">Jeffrey Yim</a>
+        <nav class="site-nav">
+            <a href="/#apps">Apps</a>
+            <a href="/#ai-investing">AI-Investing</a>
+            <a href="/#aftermath">Aftermath</a>
+            <a href="/#journal">Journal</a>
+            <a href="/#thoughts">Thoughts</a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">&#9680;</button>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <article class="fade-up seen">
+        <p><a class="back-link" href="/#aftermath">&larr; Trade Aftermath</a></p>
+        <h1>&quot;Positioning a Swiss/US Quality-Value Equity List for the Warsh Hiking Cycle&quot;</h1>
+        <div class="meta">25 Oct 2026 &middot; Trade Aftermath</div>
+        <blockquote>
+        <p><strong>Strategy classification:</strong> Macro-regime equity positioning / relative value
+        <strong>Universe:</strong> GIVN SW, ZWS US, SIKA SW, NESN SW, HOLN SW, ROP US, NOVN SW, SUN SW, SREN SW, HBAN US
+        <strong>Horizon:</strong> Through the hiking cycle (into mid-2027), reviewed at each FOMC/CPI print
+        <strong>Nature:</strong> Positioning framework, not a set of point-entry trades</p>
+        </blockquote>
+        <h2>1. Macro Premise (verified as of mid-September 2026)</h2>
+        <ul>
+        <li>Kevin Warsh is Fed Chair (sworn in May 2026). On <strong>Sep 16, 2026 the Fed hiked 25bp to 3.75–4.00%</strong>, unanimously — the first hike in over three years. The dot plot carries a median of one further hike in 2026 and a 2027 median of <strong>4.1%</strong>.</li>
+        <li>Working scenario: roughly <strong>three total hikes into mid-2027</strong> — at the hawkish end of market pricing, but inside the priced distribution.</li>
+        <li><strong>Critical nuance:</strong> Warsh explicitly rejects forward guidance and did not submit his own dot. The "guidance" is market pricing, not a commitment; it can reprice violently on a single CPI or oil print.</li>
+        <li><strong>Inflation is supply-shock-driven</strong> (Middle East conflict, oil above $100, tariffs). Hikes into supply shocks compress multiples and demand without fixing the price level's source — a worse equity regime than growth-driven tightening.</li>
+        <li><strong>The SNB is not following:</strong> policy rate at <strong>0%</strong>, expected on hold through 2026 and likely into 2027. Fed→Swiss-equity transmission runs through <strong>global risk appetite and USD/CHF, not local discount rates</strong>.</li>
+        </ul>
+        <h2>2. Transmission Channels → Portfolio Implications</h2>
+        <p><strong>A. Discount-rate compression (bearish high multiples).</strong> The premium-duration names carry the most multiple risk: Givaudan (24.5x fwd P/E), Zurn Elkay (23.1x), Sika (21.4x). GIVN is doubly exposed — richest valuation <em>and</em> lowest implied upside (+5.6%).</p>
+        <p><strong>B. USD/CHF translation (quietly bullish Swiss exporters).</strong> NESN, NOVN, GIVN, SIKA, HOLN earn heavily in USD; a stronger dollar inflates CHF-reported revenue — an earnings tailwind partially offsetting multiple compression. For USD-based buyers of CHF shares, the same move claws back return unless hedged — and hedging costs ~4% annualized in forward points given the rate gap, which alone consumes most of NESN/NOVN's implied upside. <strong>The FX decision is unavoidable and must be made consciously.</strong></p>
+        <p><strong>C. Sector rate sensitivity.</strong> Regional banks gain NII <em>if</em> the soft landing holds, but the tape shows regionals are among the first sold on hawkish surprises (funding costs, CRE credit). Reinsurers gain reinvestment yield — but SREN's tailwind is already priced (only name above consensus target, 11 sells). Construction-exposed industrials face energy-cost pressure with partial pricing-power offset.</p>
+        <h2>3. Positioning Recommendation</h2>
+        <table>
+        <thead>
+        <tr>
+        <th>Tier</th>
+        <th>Names</th>
+        <th>Rationale</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><strong>Overweight — value/upside cluster</strong></td>
+        <td><strong>SUN</strong> (14.0x P/E, 8.2x EV/EBITDA, +27.3%), <strong>HOLN</strong> (15.8x, 9.5x, +21.6%, 17 buys/0 sells), <strong>HBAN</strong> (8.9x, +26.9%, 15 buys/0 sells)</td>
+        <td>Cheap multiples absorb rate shocks; HBAN adds NII optionality if growth stays solid</td>
+        </tr>
+        <tr>
+        <td><strong>Core — resilient defensives</strong></td>
+        <td><strong>NOVN</strong> (+10.6%), <strong>NESN</strong> (+12.7%)</td>
+        <td>Defensive cash flows + USD translation tailwind; low regime sensitivity, modest upside</td>
+        </tr>
+        <tr>
+        <td><strong>Market-weight — quality with duration risk</strong></td>
+        <td><strong>ROP</strong> (+18.6%), <strong>SIKA</strong> (+12.3%), <strong>ZWS</strong> (+27.4%)</td>
+        <td>Good upside, but multiple compresses first if 2027 dots drift above 4.1%</td>
+        </tr>
+        <tr>
+        <td><strong>Underweight / avoid</strong></td>
+        <td><strong>GIVN</strong> (24.5x, +5.6% — no margin for error), <strong>SREN</strong> (−5.6%, 11 sells)</td>
+        <td>Worst reward-to-regime-risk in the list</td>
+        </tr>
+        </tbody>
+        </table>
+        <h2>4. Risk Map</h2>
+        <table>
+        <thead>
+        <tr>
+        <th>Risk</th>
+        <th>Detail</th>
+        <th>Mitigant</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Hawkish overshoot</td>
+        <td>Scenario (3 hikes) is above the median dot; beyond that, high-multiple names de-rate fastest</td>
+        <td>Cap combined GIVN/ZWS/SIKA exposure; rebalance on each SEP</td>
+        </tr>
+        <tr>
+        <td>Dovish reversal</td>
+        <td>One soft CPI unwinds hike pricing; value tilt lags a duration rally</td>
+        <td>Core NOVN/NESN ballast; avoid being zero-duration</td>
+        </tr>
+        <tr>
+        <td>Supply-shock stagflation</td>
+        <td>Oil-driven inflation + slowing growth hits industrials' volumes and margins simultaneously</td>
+        <td>HOLN/SUN pricing power; HBAN credit monitoring</td>
+        </tr>
+        <tr>
+        <td>FX</td>
+        <td>CHF weakness erodes USD-investor returns on 7 of 10 names</td>
+        <td>Explicit hedge/no-hedge decision per name; cost ≈ 4%/yr</td>
+        </tr>
+        <tr>
+        <td>Stale consensus targets</td>
+        <td>Targets largely predate the cycle's full extent; upsides for premium names are most fragile</td>
+        <td>Treat implied upside as regime-conditional, not static</td>
+        </tr>
+        </tbody>
+        </table>
+        <h2>5. After-thoughts / Review Notes</h2>
+        <ul>
+        <li><strong>The list was already constructed better than the question assumed.</strong> Mostly defensive Swiss quality sheltered by a 0% SNB, plus value-tilted US cyclicals — a reasonable posture for a supply-shock hiking cycle. The marginal value of the analysis was in the <em>tilts</em> (toward SUN/HOLN/HBAN, away from GIVN/SREN), not a wholesale rebuild.</li>
+        <li><strong>Three facts did most of the work:</strong> (1) the hike path is priced, not guided — Warsh abolished the calendar, so entry timing and staged allocation matter more than usual; (2) the inflation source is supply-side, which inverts the usual "hikes = fine for equities" heuristic; (3) the Fed–SNB divergence means the Swiss names' domestic discount rate is anchored — the cycle reaches them only through FX and global risk appetite. Everything else follows from these.</li>
+        <li><strong>The FX hedge decision deserves its own line item.</strong> A ~4% annualized hedging cost is large enough to change name selection on its own; it should be decided at the portfolio level before sizing, not discovered afterward.</li>
+        <li><strong>Watch item for the next review:</strong> whether consensus targets get cut on the premium names as the 2027 dot path firms. The +27% upsides on ZWS/SUN-type names embed pre-hike discount rates in many models; the value cluster's multiples have far less to give back.</li>
+        <li><strong>Standing instruction:</strong> this positioning is FOMC-conditional. Each meeting that adds (removes) a 2027 hike shifts names between tiers — re-underwrite the tiers on every SEP rather than letting the table go stale.</li>
+        </ul>
+        <p><em>Not investment advice. Macro positioning under active policy repricing carries elevated headline risk; tier assignments are conditional on the stated hike path and must be re-evaluated as the path reprices.</em></p>
+    </article>
+
+    <footer>
+        <span>&copy; 2026 Jeffrey Yim</span>
+        <span>
+            <a href="mailto:hello@jeffreyyim.com">Email</a> &middot;
+            <a href="#" rel="noopener">LinkedIn</a> &middot;
+            <a href="#" rel="noopener">GitHub</a>
+        </span>
+    </footer>
+</div>
+<script>(function(){var b=document.getElementById('theme-toggle');
+function d(){var h=document.documentElement;var m=window.matchMedia('(prefers-color-scheme: dark)').matches;
+var dk=h.getAttribute('data-theme')==='dark'||(!h.hasAttribute('data-theme')&&m&&localStorage.getItem('theme')!=='light');
+b.textContent=dk?'\u25d1':'\u25d0';}
+b.addEventListener('click',function(){var h=document.documentElement;
+var m=window.matchMedia('(prefers-color-scheme: dark)').matches;
+var cur=h.hasAttribute('data-theme')?(h.getAttribute('data-theme')==='dark'):m;
+if(cur){h.setAttribute('data-theme','light');localStorage.setItem('theme','light');}
+else{h.setAttribute('data-theme','dark');localStorage.setItem('theme','dark');}d();});
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',d);d();})();</script>
+</body>
+</html>
