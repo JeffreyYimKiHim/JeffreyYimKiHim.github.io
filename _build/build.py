@@ -208,9 +208,9 @@ FOOTER = """
     <footer>
         <span>&copy; 2026 Jeffrey Yim</span>
         <span>
-            <a href="mailto:hello@jeffreyyim.com">Email</a> &middot;
-            <a href="#" rel="noopener">LinkedIn</a> &middot;
-            <a href="#" rel="noopener">GitHub</a>
+            <a href="mailto:yimkihimjeffrey@gmail.com">Email</a> &middot;
+            <a href="https://www.linkedin.com/in/yimkihimjeffrey" target="_blank" rel="noopener">LinkedIn</a> &middot;
+            <a href="/Jeffrey_Yim_CV.pdf" target="_blank" rel="noopener">CV</a>
         </span>
     </footer>
 """
