@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Reflection 1: Information Asymmetry Is a Cruel Thing — Lessons from the Semiconductor Supercycle"
-date: 2026-10-25
+title: "Information Asymmetry Is a Cruel Thing — Lessons from the Semiconductor Supercycle"
+date: 2026-08-25
 tags: [reflections, semiconductors, information-asymmetry, crowded-trades, memory-chips]
 ---
 
@@ -19,7 +19,7 @@ A crowded trade doesn't appear overnight. It emerges from information disseminat
 
 And yet — the juiciest capital returns often come right before the market blows off its top. I knew that, so I couldn't help sending in more ETF orders near the top. ETFs were already the most flexible instrument in my arsenal, since going in and out required no extra approval.
 
-I was also among the early-stage investors in DRAM in April 2026. By October 2026 — barely six months later — it had set the world record as the fastest-growing ETF, while simultaneously delivering a deeply disappointing performance since 2H 2026. It's an eerie pattern: the more explosive the stock market, the more attention it draws — and that attention eventually pulls in marginal industry players rolling out business plans to contribute production, even when they're several generations behind. (CXMT, for those wondering who I'm referring to.)
+I was also among the early-stage investors in DRAM in April 2026. By August 2026 — barely four months later — it had set the world record as the fastest-growing ETF, while simultaneously delivering a deeply disappointing performance since 2H 2026. It's an eerie pattern: the more explosive the stock market, the more attention it draws — and that attention eventually pulls in marginal industry players rolling out business plans to contribute production, even when they're several generations behind. (CXMT, for those wondering who I'm referring to.)
 
 That was the ups and downs of my semiconductor trade. And here's the funny part: even with AI, you're only fed what's already written on the internet. Many of those who made it out alive knew what was coming one to two months before mainstream media hit the press.
 
