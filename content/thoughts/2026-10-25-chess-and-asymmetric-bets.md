@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Chess, Missed Opportunities, and the Case for Asymmetric Bets"
-date: 2026-10-25
+date: 2026-06-30
 categories: [reflections]
 tags: [investing, decision-making, risk, convertible-bonds]
 ---
