@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Narrow Avenues and Market Mispricing — From Bitcoin to Memory Chips"
-date: 2026-10-25
+date: 2026-10-02
 tags: [reflections, market-efficiency, bitcoin, valuation, cyclicality]
 ---
 
