@@ -1,6 +1,6 @@
 ---
 title: "Futures roll returns and the short-vol trade — a strategy review"
-date: 2026-10-25
+date: 2026-10-02
 tag: Futures
 summary: Calendar spreads, the VX–ES basis, and harvesting volatility carry — reviewed after Volmageddon. The roll yield was real; the left tail was realer.
 status: published
