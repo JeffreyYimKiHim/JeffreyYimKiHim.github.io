@@ -1,7 +1,7 @@
 ---
 title: "Positioning a Swiss/US Quality-Value Equity List for the Warsh Hiking Cycle"
 date: 2026-10-25
-tags: Swiss assets
+tag: Equities
 summary: Haven Equities in a Rates Selloff Regime
 status: published
 ---
