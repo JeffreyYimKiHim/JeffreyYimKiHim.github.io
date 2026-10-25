@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Reflection 2: Geopolitical Alpha — Bottlenecks, Freight Rates, and the Trade I Spotted but Never Took"
-date: 2026-10-25
+title: "Geopolitical Alpha — Bottlenecks, Freight Rates, and the Trade I Spotted but Never Took"
+date: 2026-09-25
 tags: [reflections, geopolitics, shipping, freight, asymmetric-upside]
 ---
 
