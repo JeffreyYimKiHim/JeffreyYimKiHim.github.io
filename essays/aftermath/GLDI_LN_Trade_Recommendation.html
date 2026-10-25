@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ways to get Gold Exposure — Jeffrey Yim</title>
+<meta name="description" content="Gold">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>&#9670;</text></svg>">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}else if(t==='light'){document.documentElement.removeAttribute('data-theme');}}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+    --serif-font: 'Spectral', Georgia, serif;
+    --sans-font: 'Jost', 'Helvetica Neue', Helvetica, sans-serif;
+    --dark-text-color: rgb(148, 148, 148);
+    --bullet-color: rgb(184, 184, 184);
+    --link-color: #52525b;
+    --link-background-color: #9191a07f;
+    --background-color: white;
+    --subtle-background-darker: rgb(252, 248, 243);
+    --border-background-color: #e0e0e0;
+    --code-background-color: rgb(245, 245, 245);
+    --color: black;
+    --nav-bg: rgba(255, 255, 255, 0.55);
+    --particle-color: rgba(120, 120, 135, 0.35);
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --dark-text-color: #949494;
+        --bullet-color: rgb(90, 90, 90);
+        --background-color: #121212;
+        --subtle-background-darker: rgb(23, 23, 23);
+        --border-background-color: #3b3d3e;
+        --code-background-color: #242424;
+        --link-background-color: #6b6b6b;
+        --link-color: rgb(161, 161, 161);
+        --color: rgb(200, 200, 200);
+        --nav-bg: rgba(18, 18, 18, 0.55);
+        --particle-color: rgba(140, 140, 150, 0.28);
+    }
+}
+html[data-theme="dark"] {
+    --dark-text-color: #949494;
+    --bullet-color: rgb(90, 90, 90);
+    --background-color: #121212;
+    --subtle-background-darker: rgb(23, 23, 23);
+    --border-background-color: #3b3d3e;
+    --code-background-color: #242424;
+    --link-background-color: #6b6b6b;
+    --link-color: rgb(161, 161, 161);
+    --color: rgb(200, 200, 200);
+    --nav-bg: rgba(18, 18, 18, 0.55);
+    --particle-color: rgba(140, 140, 150, 0.28);
+}
+* { box-sizing: border-box; }
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: var(--serif-font);
+    font-size: 17.5px;
+    line-height: 1.6;
+    margin: 0; padding: 0;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+#field { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.container { max-width: 650px; margin: 0 auto; padding: 20px 20px 40px 20px; position: relative; z-index: 1; }
+.site-nav-wrapper {
+    position: sticky; top: 0; z-index: 1000;
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px);
+    background-color: var(--nav-bg);
+    transition: background-color 0.35s ease;
+}
+.site-nav-inner { max-width: 650px; margin: 0 auto; padding: 18px 20px; display: flex; align-items: baseline; justify-content: space-between; gap: 1em; }
+.site-name { font-family: var(--sans-font); font-weight: 500; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color); text-decoration: none; border-bottom: none; }
+.site-nav { display: flex; align-items: baseline; gap: 1.15em; flex-wrap: wrap; justify-content: flex-end; }
+.site-nav a { font-family: var(--sans-font); font-size: 13.5px; color: var(--link-color); text-decoration: none; border-bottom: none; position: relative; }
+.site-nav a::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 100%; height: 1px; background: var(--color); transform: scaleX(0); transform-origin: left; transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1); }
+.site-nav a:hover::after { transform: scaleX(1); }
+#theme-toggle { background: none; border: none; cursor: pointer; font-family: var(--sans-font); font-size: 14px; color: var(--link-color); padding: 0 0 0 0.4em; line-height: 1; transition: transform 0.4s ease, color 0.3s ease; }
+#theme-toggle:hover { transform: rotate(30deg); color: var(--color); }
+h1, h2, h3 { font-family: var(--sans-font); font-weight: 500; }
+h1 { font-size: 1.9em; font-weight: 400; letter-spacing: -0.01em; margin: 0.2em 0 0.6em 0; }
+h2 { font-size: 13px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--dark-text-color); margin: 3.2em 0 1.1em 0; display: flex; align-items: center; gap: 0.9em; }
+h2::after { content: ""; flex: 1; height: 1px; background: var(--border-background-color); }
+h3 { font-size: 1.05em; margin: 0 0 0.15em 0; font-weight: 500; }
+p { margin: 0.6em 0; }
+.lede { font-size: 1.06em; }
+.dim { color: var(--dark-text-color); }
+.small { font-size: 0.86em; }
+a { font-weight: 400; text-decoration: none; color: var(--link-color); border-bottom: 0.1em solid var(--link-background-color); transition: all 0.3s; }
+a:hover { border-bottom: 0.1em solid var(--color); }
+blockquote { font-style: italic; background-color: var(--code-background-color); padding: 6px 20px; margin: 1.4em 0; border-left: 2px solid var(--border-background-color); border-radius: 8px; }
+ul { list-style-type: none; padding-left: 0; }
+ul > li { position: relative; padding-left: 1.2em; margin-bottom: 0.55em; }
+ul > li::before { content: "\2022"; color: var(--bullet-color); position: absolute; left: 0; top: 0.1em; font-size: 30px; line-height: 1; }
+ol { padding-left: 1.4em; }
+ol > li { margin-bottom: 0.7em; }
+ol > li::marker { color: var(--bullet-color); }
+.beliefs-list { column-count: 2; column-gap: 2rem; }
+.beliefs-list li { break-inside: avoid; }
+@media (max-width: 640px) { .beliefs-list { column-count: 1; } }
+.entry { margin-bottom: 1.6em; }
+.entry .meta { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dark-text-color); margin-bottom: 0.25em; }
+.entry .tag { display: inline-block; font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-text-color); border: 1px solid var(--border-background-color); border-radius: 3px; padding: 1px 7px; margin-left: 0.6em; vertical-align: 1px; }
+.entry p { margin: 0.35em 0 0 0; }
+article .meta { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dark-text-color); margin: 0.4em 0 1.6em 0; }
+article h2 { font-size: 1.25em; letter-spacing: 0; text-transform: none; color: var(--color); margin: 1.8em 0 0.5em 0; display: block; }
+article h2::after { content: none; }
+article h3 { font-size: 1.05em; margin: 1.4em 0 0.3em 0; }
+article p { margin: 0.8em 0; }
+article code { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 0.88em; background: var(--code-background-color); padding: 2px 6px; border-radius: 4px; }
+article img { max-width: 100%; border-radius: 6px; }
+article hr { border: none; height: 1px; background: var(--border-background-color); margin: 2.2em 0; }
+.back-link { font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.06em; border-bottom: none; color: var(--dark-text-color); }
+.back-link:hover { color: var(--color); border-bottom: none; }
+footer { margin-top: 5em; padding-top: 1.4em; border-top: 1px solid var(--border-background-color); font-family: var(--sans-font); font-size: 13px; color: var(--dark-text-color); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1em; }
+footer a { font-size: 13px; }
+.fade-up { opacity: 0; transform: translateY(1rem); transition: opacity 1.1s cubic-bezier(.22, 1, .36, 1), transform 1.1s cubic-bezier(.22, 1, .36, 1); }
+.fade-up.seen { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .fade-up { opacity: 1; transform: none; transition: none; } }
+@media (max-width: 768px) { body { font-size: 16.5px; } .site-nav-inner { padding: 14px 20px; } .site-nav { gap: 0.85em; } }
+</style>
+</head>
+<body>
+<div class="site-nav-wrapper">
+    <div class="site-nav-inner">
+        <a class="site-name" href="/">Jeffrey Yim</a>
+        <nav class="site-nav">
+            <a href="/#apps">Apps</a>
+            <a href="/#ai-investing">AI-Investing</a>
+            <a href="/#aftermath">Aftermath</a>
+            <a href="/#journal">Journal</a>
+            <a href="/#thoughts">Thoughts</a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">&#9680;</button>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <article class="fade-up seen">
+        <p><a class="back-link" href="/#aftermath">&larr; Trade Aftermath</a></p>
+        <h1>Ways to get Gold Exposure</h1>
+        <div class="meta">25 Oct 2026 &middot; Trade Aftermath &middot; Gold</div>
+        <h1>Trade Recommendation: GLDI LN (IncomeShares Gold+ Yield ETP)</h1>
+        <p><strong>Horizon:</strong> 3 months
+        <strong>Author's note:</strong> Personal trade recommendation for process demonstration. Not investment advice.</p>
+        <hr />
+        <h2>1. Executive Summary</h2>
+        <p>GLDI LN is a London-listed ETP that holds physical gold exposure (via GLD) and systematically sells out-of-the-money gold call options, converting elevated gold implied volatility into a monthly cash distribution (~1.1% per month, ~13.4% annualized trailing yield).</p>
+        <p>The original recommendation was a qualified BUY with staged entry. Following the 11 Sep macro repricing (hawkish Fed under Chair Warsh, ~90bp of hikes priced to Dec-27, 10Y near 5%, live diplomatic track in Salalah), the recommendation was revised to <strong>wait-and-see</strong>: entry is now conditional on a pre-defined check framework, with the earliest full-clarity entry date around 23 Sep 2026.</p>
+        <table>
+        <thead>
+        <tr>
+        <th>Key parameter</th>
+        <th>Level</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Reference entry zone</td>
+        <td>$12.80–13.10</td>
+        </tr>
+        <tr>
+        <td>Preferred entry (post-checks)</td>
+        <td>&lt; $12.30–12.50</td>
+        </tr>
+        <tr>
+        <td>3-month target</td>
+        <td>+4% to +7% total return</td>
+        </tr>
+        <tr>
+        <td>Price stop</td>
+        <td>Gold weekly close &lt; $4,150, or GLDI &lt; $11.90</td>
+        </tr>
+        <tr>
+        <td>Thesis kill</td>
+        <td>Two consecutive monthly distributions cut &gt; 30%, or GLD IV &lt; 17–18%</td>
+        </tr>
+        <tr>
+        <td>Hard reassessment</td>
+        <td>11 Dec 2026 (post 9-Dec FOMC)</td>
+        </tr>
+        </tbody>
+        </table>
+        <hr />
+        <h2>2. Product Mechanics — What the 13.4% Yield Actually Is</h2>
+        <ul>
+        <li><strong>The engine:</strong> premium harvested from writing OTM gold calls, plus/minus gold price drift on the underlying holding, minus upside foregone when gold rallies through the strikes.</li>
+        <li><strong>Return profile:</strong> ~1:1 participation in gold downside; upside capped near written strikes each cycle.</li>
+        <li><strong>Optimal habitat:</strong> range-bound or gently rising gold with elevated implied volatility — the "muddle-through" regime.</li>
+        <li><strong>Worst habitat:</strong> whip-saw tape (downside taken in full, rebounds capped) or simultaneous gold sell-off + IV compression.</li>
+        <li><strong>Distribution ≠ income:</strong> part of the payout can be return of capital in down months; yield must be judged net of NAV erosion. The 12-month record (GLDI +15.9% vs GLD +21.7%) shows the capped-upside lag is structural, not a defect.</li>
+        <li><strong>Premium scales with price level, not just vol:</strong> premium ≈ spot × IV × √t. IV fell from 34.9% (Mar-26 peak) to ~24%, but gold rose from ~$3,200 to ~$4,325 — dollar premium per share roughly flat-to-up, which is why payouts held up despite vol normalization.</li>
+        <li><strong>No reserve buffer:</strong> ETP structure distributes income as earned; there is no investment-trust-style revenue reserve. This makes the distribution line a fast, honest signal of the engine's health — hence its role as the kill trigger.</li>
+        <li><strong>Liquidity:</strong> thin secondary market (~2.6k shares/day) — limit orders only, sized so exit does not move the market.</li>
+        </ul>
+        <hr />
+        <h2>3. Investment Rationale</h2>
+        <ol>
+        <li><strong>Volatility regime pays you:</strong> gold 1M IV ~24% — well above the Sep-25 trough of 14.9%, off the Mar-26 war peak of 34.9%. Elevated plateau = rich premium without buying the panic top.</li>
+        <li><strong>Inverted (call-rich) skew:</strong> 25-delta risk reversal at −1.59 vols means gold calls price richer than puts — a call-overwriting strategy harvests more premium per unit of upside surrendered. The skew works <em>for</em> the product.</li>
+        <li><strong>Gold's structural bid:</strong> central-bank accumulation, de-dollarization flows, and a live US–Iran war premium underpin the NAV side.</li>
+        <li><strong>Mandate fit:</strong> ETP wrapper satisfies a no-single-stocks constraint; ~13% cash yield cushions ~1:1 downside participation in an income sleeve role.</li>
+        </ol>
+        <p><strong>Honest statement of dependency:</strong> this is a carry trade on gold volatility with a delta-one gold position attached. It pays in muddle-through and loses in both tails — a hawkish-Fed gold break, or a diplomatic breakthrough that unwinds the war premium and crushes IV simultaneously.</p>
+        <hr />
+        <h2>4. Options-Market Positioning — Two Readings</h2>
+        <p><strong>Supportive:</strong> call-rich skew (RR −1.59) + elevated IV = the market pays up for exactly what GLDI sells. Put/call ratio 1.16x on ~496k contracts = hedging demand present but not panicked.</p>
+        <p><strong>Cautionary:</strong> skew is a pricing structure, not a forecast. Crowded upside positioning cuts both ways — a war-premium unwind forces the same call buyers to unwind, compressing IV fast. PCR near 1.0–1.2x is weak evidence consistent with both healthy flow and complacency. None of this protects the NAV leg against a real-yield-driven gold sell-off.</p>
+        <p><strong>Net:</strong> options-market evidence confirms the <em>carry</em> case only — never treat it as a directional signal.</p>
+        <hr />
+        <h2>5. Critical Review (Self-Critique of the Original Thesis)</h2>
+        <ol>
+        <li><strong>Yield is not income</strong> — return-of-capital component must be judged net of NAV erosion.</li>
+        <li><strong>PCR is weak evidence</strong> — confirms carry, silent on direction.</li>
+        <li><strong>Internal contradiction</strong> — the thesis leaned on "Fed on hold" while the market was already pricing hikes; the pillar needed re-testing (and broke on 11 Sep).</li>
+        <li><strong>Sweet spot overstated</strong> — "range-bound with high IV" is a narrower habitat than the base case implied.</li>
+        </ol>
+        <h2>6. Devil's Advocate (post 11-Sep repricing)</h2>
+        <ol>
+        <li><strong>Real-yield hostility:</strong> ~90bp of hikes priced to Dec-27, 10Y near 5%, a Treasury buyback miss — the 2022 analogue applies: inflation + a hiking Fed = gold down. New Chair Warsh's regime ("inflation is a choice," forward guidance removed) raises the hawkish tail weight.</li>
+        <li><strong>Diplomacy double hit:</strong> Salalah GCC/Iran meeting success unwinds the war premium AND crushes IV — NAV down, then distribution cut.</li>
+        <li><strong>Whip-saw path:</strong> CPI + FOMC + Salalah stacked inside week one; covered calls capture downside and cap rebounds.</li>
+        <li><strong>Sponsorship competition:</strong> AI-capex equity resilience drains gold's marginal bid; central-bank demand is price-elastic at $4,300+.</li>
+        </ol>
+        <hr />
+        <h2>7. Scenario Matrix (3-month)</h2>
+        <table>
+        <thead>
+        <tr>
+        <th>Scenario</th>
+        <th>Prob (orig.)</th>
+        <th>Prob (post 11-Sep)</th>
+        <th>Gold path</th>
+        <th>GLDI 3-month outcome</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Base — muddle-through</td>
+        <td>45%</td>
+        <td>35%</td>
+        <td>Range-bound $4,150–4,450, IV elevated</td>
+        <td>+3% to +6%</td>
+        </tr>
+        <tr>
+        <td>Bull — escalation</td>
+        <td>25%</td>
+        <td>25%</td>
+        <td>Spike &gt; $4,600 on supply shock</td>
+        <td>+6% to +9% (capped below GLD)</td>
+        </tr>
+        <tr>
+        <td>Bear — hawkish Fed</td>
+        <td>20%</td>
+        <td>25%</td>
+        <td>Real yields spike, gold &lt; $4,000</td>
+        <td>−4% to −8%</td>
+        </tr>
+        <tr>
+        <td>Peace — diplomacy works</td>
+        <td>10%</td>
+        <td>15%</td>
+        <td>War premium unwinds, IV &lt; 18%</td>
+        <td>−2% to −4% plus distribution cuts</td>
+        </tr>
+        </tbody>
+        </table>
+        <p>Probability-weighted value compresses from ~+2.4% to ~+1.5% after the repricing. The monthly carry (~1.1%) is the buffer keeping expected value positive — which is why IV and distribution checks carry the highest gate weights. The trade is a bet on the <em>centre</em> of the distribution holding for 90 days.</p>
+        <hr />
+        <h2>8. Pre-Entry Check Framework (wait-and-see gates)</h2>
+        <table>
+        <thead>
+        <tr>
+        <th>Pre-check</th>
+        <th>When</th>
+        <th>Green-light trigger</th>
+        <th>Why a pass de-risks the trade</th>
+        <th>Importance</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>US core CPI (m/m)</td>
+        <td>11 Sep</td>
+        <td>≤ 0.20%</td>
+        <td>≥ 0.25% keeps a Sep hike live and reprices real yields against gold</td>
+        <td><strong>CRITICAL</strong></td>
+        </tr>
+        <tr>
+        <td>FOMC decision + SEP dots</td>
+        <td>16 Sep</td>
+        <td>No hike; no 4th 2027 dot</td>
+        <td>Confirms the Fed looks through the energy supply shock</td>
+        <td><strong>CRITICAL</strong></td>
+        </tr>
+        <tr>
+        <td>10Y real yield trend</td>
+        <td>16–30 Sep</td>
+        <td>Flat-to-falling 2 weeks, no new highs</td>
+        <td>Real yields are gold's dominant fundamental driver</td>
+        <td><strong>CRITICAL</strong></td>
+        </tr>
+        <tr>
+        <td>Salalah GCC/Iran meeting</td>
+        <td>14 Sep</td>
+        <td>No framework, no follow-up date</td>
+        <td>A "constructive dialogue" communiqué de-vols the market without ending the war — the exact double-hit path</td>
+        <td><strong>HIGH</strong></td>
+        </tr>
+        <tr>
+        <td>Bab el-Mandeb closure odds</td>
+        <td>by 18 Sep</td>
+        <td>≥ 25% (Polymarket)</td>
+        <td>Sustained odds = market still prices escalation = durable vol premium</td>
+        <td>MEDIUM</td>
+        </tr>
+        <tr>
+        <td>GLD IV post-headlines</td>
+        <td>15–23 Sep</td>
+        <td>Holds ≥ 21–22%</td>
+        <td>Proves the yield engine is structural, not headline-hostage</td>
+        <td><strong>HIGH</strong></td>
+        </tr>
+        <tr>
+        <td>GLDI September distribution</td>
+        <td>~30 Sep</td>
+        <td>≥ 95% of trailing rate</td>
+        <td>Hard evidence the harvest converts to cash through the event window</td>
+        <td><strong>HIGH</strong></td>
+        </tr>
+        <tr>
+        <td>Gold price through events</td>
+        <td>11–23 Sep</td>
+        <td>Holds $4,150–4,200</td>
+        <td>War premium absorbed by structural bids (central banks)</td>
+        <td><strong>HIGH</strong></td>
+        </tr>
+        </tbody>
+        </table>
+        <p><strong>Decision rule:</strong> all three CRITICAL checks must pass (fail = stand down, revisit at 28-Oct FOMC). Of the remaining five: 4–5 green = full size; 2–3 green = half size; 0–1 = defer. Earliest full-clarity entry ~23 Sep 2026. Cost of waiting: ~1.1% foregone September premium — cheap insurance against a −6% scenario.</p>
+        <hr />
+        <h2>9. Trade Plan</h2>
+        <p><strong>Entry:</strong> only after the framework clears; reference zone $12.80–13.10, preferred &lt; $12.30–12.50 on a post-event dip with IV ≥ 22% (yield-on-cost improves toward 14–15%). Limit orders only. Income-sleeve sizing; half size on 2–3 secondary greens.</p>
+        <p><strong>Exit / stop-loss:</strong>
+        - Profit target +4% to +7% over 3 months — reassess, do not roll mechanically
+        - Price stop: gold weekly close &lt; $4,150 (tightened from $4,000 — rising real yields do not earn 7.5% of rope) or GLDI &lt; $11.90
+        - Thesis kill: two consecutive distribution cuts &gt; 30%, or GLD IV &lt; 17–18% — exit regardless of gold price
+        - Hard review: 11 Dec 2026</p>
+        <p><strong>Upside catalysts (support holding, not adding):</strong> further Hormuz/Bab el-Mandeb escalation; dovish FOMC surprise; central-bank purchase data confirming the floor. Do not average up — capped upside makes adding into strength a worse trade than the initial entry.</p>
+        <p><strong>Mandate constraints baked in:</strong> 30-day minimum hold means stops can only act after day 30 — entry is gated precisely because the worst 30-day path, not the average one, must be underwritten.</p>
+        <hr />
+        <h2>10. Key Monitors and Review Cadence</h2>
+        <table>
+        <thead>
+        <tr>
+        <th>Monitor</th>
+        <th>Trigger</th>
+        <th>Action on breach</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>GLD implied vol</td>
+        <td>Weekly close &lt; 17–18%</td>
+        <td>Thesis dead — exit at first compliant date</td>
+        </tr>
+        <tr>
+        <td>Gold price</td>
+        <td>Weekly close &lt; $4,150</td>
+        <td>Stop-loss review</td>
+        </tr>
+        <tr>
+        <td>GLDI price</td>
+        <td>&lt; $11.90</td>
+        <td>Hard stop — product-level failure signal</td>
+        </tr>
+        <tr>
+        <td>Monthly distribution</td>
+        <td>Two consecutive cuts &gt; 30%</td>
+        <td>Exit regardless of gold price</td>
+        </tr>
+        <tr>
+        <td>FOMC calendar</td>
+        <td>28 Oct, 9 Dec 2026</td>
+        <td>Re-underwrite into each meeting</td>
+        </tr>
+        <tr>
+        <td>Bab el-Mandeb / Salalah track</td>
+        <td>Closure odds &lt; 15% or signed framework</td>
+        <td>Expect IV compression — pre-position exit decision</td>
+        </tr>
+        </tbody>
+        </table>
+        <p><strong>Cadence:</strong> weekly log of GLD IV, gold weekly close, distribution announcements; Day-14 checkpoint (does the position still pass its own entry framework?); Day-28 full re-underwrite — holding past day 30 is a new decision, not inertia.</p>
+        <hr />
+        <p><em>Personal trade recommendation for process demonstration only. Not investment advice. All levels as of 11 Sep 2026 and subject to the pre-entry check framework.</em></p>
+    </article>
+
+    <footer>
+        <span>&copy; 2026 Jeffrey Yim</span>
+        <span>
+            <a href="mailto:hello@jeffreyyim.com">Email</a> &middot;
+            <a href="#" rel="noopener">LinkedIn</a> &middot;
+            <a href="#" rel="noopener">GitHub</a>
+        </span>
+    </footer>
+</div>
+<script>(function(){var b=document.getElementById('theme-toggle');
+function d(){var h=document.documentElement;var m=window.matchMedia('(prefers-color-scheme: dark)').matches;
+var dk=h.getAttribute('data-theme')==='dark'||(!h.hasAttribute('data-theme')&&m&&localStorage.getItem('theme')!=='light');
+b.textContent=dk?'\u25d1':'\u25d0';}
+b.addEventListener('click',function(){var h=document.documentElement;
+var m=window.matchMedia('(prefers-color-scheme: dark)').matches;
+var cur=h.hasAttribute('data-theme')?(h.getAttribute('data-theme')==='dark'):m;
+if(cur){h.setAttribute('data-theme','light');localStorage.setItem('theme','light');}
+else{h.setAttribute('data-theme','dark');localStorage.setItem('theme','dark');}d();});
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',d);d();})();</script>
+</body>
+</html>
