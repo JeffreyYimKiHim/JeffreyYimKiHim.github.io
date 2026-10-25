@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&quot;What AI Actually Did to My Life — and What It Will Never Do&quot; — Jeffrey Yim</title>
+<meta name="description" content="&quot;What AI Actually Did to My Life — and What It Will Never Do&quot;">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>&#9670;</text></svg>">
+<script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}else if(t==='light'){document.documentElement.removeAttribute('data-theme');}}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+    --serif-font: 'Spectral', Georgia, serif;
+    --sans-font: 'Jost', 'Helvetica Neue', Helvetica, sans-serif;
+    --dark-text-color: rgb(148, 148, 148);
+    --bullet-color: rgb(184, 184, 184);
+    --link-color: #52525b;
+    --link-background-color: #9191a07f;
+    --background-color: white;
+    --subtle-background-darker: rgb(252, 248, 243);
+    --border-background-color: #e0e0e0;
+    --code-background-color: rgb(245, 245, 245);
+    --color: black;
+    --nav-bg: rgba(255, 255, 255, 0.55);
+    --particle-color: rgba(120, 120, 135, 0.35);
+}
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --dark-text-color: #949494;
+        --bullet-color: rgb(90, 90, 90);
+        --background-color: #121212;
+        --subtle-background-darker: rgb(23, 23, 23);
+        --border-background-color: #3b3d3e;
+        --code-background-color: #242424;
+        --link-background-color: #6b6b6b;
+        --link-color: rgb(161, 161, 161);
+        --color: rgb(200, 200, 200);
+        --nav-bg: rgba(18, 18, 18, 0.55);
+        --particle-color: rgba(140, 140, 150, 0.28);
+    }
+}
+html[data-theme="dark"] {
+    --dark-text-color: #949494;
+    --bullet-color: rgb(90, 90, 90);
+    --background-color: #121212;
+    --subtle-background-darker: rgb(23, 23, 23);
+    --border-background-color: #3b3d3e;
+    --code-background-color: #242424;
+    --link-background-color: #6b6b6b;
+    --link-color: rgb(161, 161, 161);
+    --color: rgb(200, 200, 200);
+    --nav-bg: rgba(18, 18, 18, 0.55);
+    --particle-color: rgba(140, 140, 150, 0.28);
+}
+* { box-sizing: border-box; }
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: var(--serif-font);
+    font-size: 17.5px;
+    line-height: 1.6;
+    margin: 0; padding: 0;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+#field { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.container { max-width: 650px; margin: 0 auto; padding: 20px 20px 40px 20px; position: relative; z-index: 1; }
+.site-nav-wrapper {
+    position: sticky; top: 0; z-index: 1000;
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px);
+    background-color: var(--nav-bg);
+    transition: background-color 0.35s ease;
+}
+.site-nav-inner { max-width: 650px; margin: 0 auto; padding: 18px 20px; display: flex; align-items: baseline; justify-content: space-between; gap: 1em; }
+.site-name { font-family: var(--sans-font); font-weight: 500; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color); text-decoration: none; border-bottom: none; }
+.site-nav { display: flex; align-items: baseline; gap: 1.15em; flex-wrap: wrap; justify-content: flex-end; }
+.site-nav a { font-family: var(--sans-font); font-size: 13.5px; color: var(--link-color); text-decoration: none; border-bottom: none; position: relative; }
+.site-nav a::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 100%; height: 1px; background: var(--color); transform: scaleX(0); transform-origin: left; transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1); }
+.site-nav a:hover::after { transform: scaleX(1); }
+#theme-toggle { background: none; border: none; cursor: pointer; font-family: var(--sans-font); font-size: 14px; color: var(--link-color); padding: 0 0 0 0.4em; line-height: 1; transition: transform 0.4s ease, color 0.3s ease; }
+#theme-toggle:hover { transform: rotate(30deg); color: var(--color); }
+h1, h2, h3 { font-family: var(--sans-font); font-weight: 500; }
+h1 { font-size: 1.9em; font-weight: 400; letter-spacing: -0.01em; margin: 0.2em 0 0.6em 0; }
+h2 { font-size: 13px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--dark-text-color); margin: 3.2em 0 1.1em 0; display: flex; align-items: center; gap: 0.9em; }
+h2::after { content: ""; flex: 1; height: 1px; background: var(--border-background-color); }
+h3 { font-size: 1.05em; margin: 0 0 0.15em 0; font-weight: 500; }
+p { margin: 0.6em 0; }
+.lede { font-size: 1.06em; }
+.dim { color: var(--dark-text-color); }
+.small { font-size: 0.86em; }
+a { font-weight: 400; text-decoration: none; color: var(--link-color); border-bottom: 0.1em solid var(--link-background-color); transition: all 0.3s; }
+a:hover { border-bottom: 0.1em solid var(--color); }
+blockquote { font-style: italic; background-color: var(--code-background-color); padding: 6px 20px; margin: 1.4em 0; border-left: 2px solid var(--border-background-color); border-radius: 8px; }
+ul { list-style-type: none; padding-left: 0; }
+ul > li { position: relative; padding-left: 1.2em; margin-bottom: 0.55em; }
+ul > li::before { content: "\2022"; color: var(--bullet-color); position: absolute; left: 0; top: 0.1em; font-size: 30px; line-height: 1; }
+ol { padding-left: 1.4em; }
+ol > li { margin-bottom: 0.7em; }
+ol > li::marker { color: var(--bullet-color); }
+.beliefs-list { column-count: 2; column-gap: 2rem; }
+.beliefs-list li { break-inside: avoid; }
+@media (max-width: 640px) { .beliefs-list { column-count: 1; } }
+.entry { margin-bottom: 1.6em; }
+.entry .meta { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dark-text-color); margin-bottom: 0.25em; }
+.entry .tag { display: inline-block; font-family: var(--sans-font); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark-text-color); border: 1px solid var(--border-background-color); border-radius: 3px; padding: 1px 7px; margin-left: 0.6em; vertical-align: 1px; }
+.entry p { margin: 0.35em 0 0 0; }
+article .meta { font-family: var(--sans-font); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dark-text-color); margin: 0.4em 0 1.6em 0; }
+article h2 { font-size: 1.25em; letter-spacing: 0; text-transform: none; color: var(--color); margin: 1.8em 0 0.5em 0; display: block; }
+article h2::after { content: none; }
+article h3 { font-size: 1.05em; margin: 1.4em 0 0.3em 0; }
+article p { margin: 0.8em 0; }
+article code { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 0.88em; background: var(--code-background-color); padding: 2px 6px; border-radius: 4px; }
+article img { max-width: 100%; border-radius: 6px; }
+article hr { border: none; height: 1px; background: var(--border-background-color); margin: 2.2em 0; }
+.back-link { font-family: var(--sans-font); font-size: 13px; letter-spacing: 0.06em; border-bottom: none; color: var(--dark-text-color); }
+.back-link:hover { color: var(--color); border-bottom: none; }
+footer { margin-top: 5em; padding-top: 1.4em; border-top: 1px solid var(--border-background-color); font-family: var(--sans-font); font-size: 13px; color: var(--dark-text-color); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1em; }
+footer a { font-size: 13px; }
+.fade-up { opacity: 0; transform: translateY(1rem); transition: opacity 1.1s cubic-bezier(.22, 1, .36, 1), transform 1.1s cubic-bezier(.22, 1, .36, 1); }
+.fade-up.seen { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .fade-up { opacity: 1; transform: none; transition: none; } }
+@media (max-width: 768px) { body { font-size: 16.5px; } .site-nav-inner { padding: 14px 20px; } .site-nav { gap: 0.85em; } }
+</style>
+</head>
+<body>
+<div class="site-nav-wrapper">
+    <div class="site-nav-inner">
+        <a class="site-name" href="/">Jeffrey Yim</a>
+        <nav class="site-nav">
+            <a href="/#apps">Apps</a>
+            <a href="/#ai-investing">AI-Investing</a>
+            <a href="/#aftermath">Ideas</a>
+            <a href="/#journal">Journal</a>
+            <a href="/#thoughts">Thoughts</a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">&#9680;</button>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <article class="fade-up seen">
+        <p><a class="back-link" href="/#thoughts">&larr; Personal Thoughts</a></p>
+        <h1>&quot;What AI Actually Did to My Life — and What It Will Never Do&quot;</h1>
+        <div class="meta">25 Oct 2026 &middot; Personal Thoughts</div>
+        <h1>What AI Actually Did to My Life — and What It Will Never Do</h1>
+        <p>Recalling how I actually use AI has been an eye-opener. I have AI add-ins in VS Code that let me recode an entire back-testing engine and compute results in interactive JavaScript. The strategy itself became more realistic than ever before — properly accounting for stamp duty, exchange fees, broker commissions, margining costs, and everything else that naive backtests quietly ignore.</p>
+        <p>I have coded apps in Xcode — a simple hear-and-play music score writer that takes a short hum and churns out music scores. I have had AI analyze my living habits, help me think through relationship problems, organize my medical conditions over the long run, plan travel for me and my friends. It has touched my DCF models for corporate valuations, handled IT chores, run scheduled scraping jobs that deliver to my Telegram, monitored major geopolitical tracker sites (and, of course, my serenity), coached me to talk better, and sharpened my market research.</p>
+        <p>The possibilities are genuinely endless — with one large exception. AI does not directly solve the physical and social problems. It cannot build rapport with dealers, because whether I actually meet a person is beyond its capabilities. It cannot foretell what will go wrong; that comes from experience. It cannot cook up a network of important buyside and sellside contacts, or know the right thing to say at the right time. That is something a human still owns and must act on independently.</p>
+        <p>Still, AI has mapped out a large portion of life that can be scrutinized, and it has already altered some of my decision-making. Which raises the uncomfortable question: when everyone can do the same, the low-hanging fruit gets very scarce. People will have to imagine newer and better things to do. Where does that lead?</p>
+        <p>At least from the financial side, I believe people know better products and strategies are needed — but the first person to build one faces extra risk and regulatory scrutiny. Shying away from that, though, means getting stuck: the traditionally educated individual risks becoming the labor nobody wants, and sadly the amount of commitment demanded does not get any less. So perhaps the logical end is that more and more entrepreneurs will be minted — people who dare to shift their time and focus onto something completely new (not bound by traditional workplace critique), who figure out new revenue models based not on a fixed paycheck but on delivering rewardable outcomes, at scale.</p>
+        <p>And that person will need to adopt a new lifestyle — probably a very different social circle for starters, away from the traditional university and high-school crowd — and hopefully AI will be there with them for the emotional loneliness that comes with it.</p>
+        <h2>Why this matters</h2>
+        <p>This reflection is my attempt at an honest ledger: what AI genuinely changed, and where the boundary sits. Much of the public conversation swings between "AI will do everything" and "AI is a toy." Neither matched my experience. The tool is transformative on anything computable, documentable, or schedulable — and nearly absent exactly where careers are actually made: trust, timing, judgment under uncertainty, and networks built face to face.</p>
+        <p>The second half matters even more for readers: if AI equalizes access to capability, then capability stops being the differentiator. The differentiator becomes the willingness to take unpriced risk — to build new products, new strategies, and new revenue models before the market (or the regulator) has a template for them. That is an entrepreneurship conclusion, and it has personal costs — loneliness chief among them — that are worth naming honestly rather than discovering the hard way.</p>
+        <h2>Takeaways</h2>
+        <ul>
+        <li><strong>Audit your own AI usage concretely.</strong> The insight is not "AI is powerful" but <em>where</em> it compound-ed my output: engineering realism (fees, costs in backtests), personal organization (health, travel, habits), and leverage (scraping, monitoring, research). Do the same audit — you will find your own pattern.</li>
+        <li><strong>Know the boundary: AI cannot build your network or your nerve.</strong> Rapport, reputation, and well-timed words with the right counterparty remain human-only work. Invest in them deliberately, because everyone else's <em>technical</em> floor is rising.</li>
+        <li><strong>When capability commoditizes, risk-taking becomes the moat.</strong> As low-hanging fruit disappears, returns migrate to those willing to face first-mover risk and regulatory ambiguity. Standing still is also a risk — arguably the bigger one.</li>
+        <li><strong>Expect the entrepreneurial shift to be personal, not just professional.</strong> New revenue models based on outcomes rather than paychecks will demand new routines and new social circles. Plan for the human cost — including loneliness — as seriously as the business model.</li>
+        </ul>
+    </article>
+
+    <footer>
+        <span>&copy; 2026 Jeffrey Yim</span>
+        <span>
+            <a href="mailto:hello@jeffreyyim.com">Email</a> &middot;
+            <a href="#" rel="noopener">LinkedIn</a> &middot;
+            <a href="#" rel="noopener">GitHub</a>
+        </span>
+    </footer>
+</div>
+<script>(function(){var b=document.getElementById('theme-toggle');
+function d(){var h=document.documentElement;var m=window.matchMedia('(prefers-color-scheme: dark)').matches;
+var dk=h.getAttribute('data-theme')==='dark'||(!h.hasAttribute('data-theme')&&m&&localStorage.getItem('theme')!=='light');
+b.textContent=dk?'\u25d1':'\u25d0';}
+b.addEventListener('click',function(){var h=document.documentElement;
+var m=window.matchMedia('(prefers-color-scheme: dark)').matches;
+var cur=h.hasAttribute('data-theme')?(h.getAttribute('data-theme')==='dark'):m;
+if(cur){h.setAttribute('data-theme','light');localStorage.setItem('theme','light');}
+else{h.setAttribute('data-theme','dark');localStorage.setItem('theme','dark');}d();});
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',d);d();})();</script>
+</body>
+</html>
