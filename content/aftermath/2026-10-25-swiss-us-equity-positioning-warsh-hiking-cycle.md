@@ -1,11 +1,9 @@
 ---
-layout: post
 title: "Positioning a Swiss/US Quality-Value Equity List for the Warsh Hiking Cycle"
 date: 2026-10-25
-categories: [trading-strategies, macro]
-tags: [Fed, Kevin-Warsh, rate-hikes, SNB, USDCHF, Swiss-equities, value-tilt, sector-rotation]
-status: review
-conviction: medium
+tags: Swiss assets
+summary: Haven Equities in a Rate Selloff Regime
+status: published
 ---
 
 > **Strategy classification:** Macro-regime equity positioning / relative value
