@@ -29,10 +29,10 @@ ESSAYS = ROOT / "essays"
 HOME_HTML = ROOT / "_build" / "home.html"
 
 SECTIONS = [
-    ("apps",         "Apps Blueprints",  "Product sketches for problems I keep meeting in the wild. Each blueprint covers the pain, the data model, and the smallest useful version."),
-    ("ai-investing", "AI-Investing",     "Where AI actually helps an investor — and where it's theatre."),
     ("aftermath",    "Ideas",  "Post-mortems of non-mainstream trade ideas — thesis, expression, outcome, lesson. The P&amp;L is the least interesting number."),
-    ("journal",      "Thesis Journal",   "The PM track, in public: live theses with explicit invalidation. If I can't write down what would prove me wrong, I don't have a thesis."),
+    ("ai-investing", "AI-Investing",     "Where AI actually helps an investor implements."),
+    ("journal",      "Review",   "If I can't write down what would prove me wrong, I don't have a thesis."),
+    ("apps",         "Beyond Investing",  "Shark Tank Ideas!"),
     ("thoughts",     "Personal Thoughts", ""),
 ]
 
@@ -193,10 +193,10 @@ NAV = """
     <div class="site-nav-inner">
         <a class="site-name" href="/">Jeffrey Yim</a>
         <nav class="site-nav">
-            <a href="/#apps">Apps</a>
-            <a href="/#ai-investing">AI-Investing</a>
             <a href="/#aftermath">Ideas</a>
-            <a href="/#journal">Journal</a>
+            <a href="/#ai-investing">AI-Investing</a>
+            <a href="/#journal">Review</a>
+            <a href="/#apps">Beyond Investing</a>
             <a href="/#thoughts">Thoughts</a>
             <button id="theme-toggle" aria-label="Toggle dark mode">&#9680;</button>
         </nav>
