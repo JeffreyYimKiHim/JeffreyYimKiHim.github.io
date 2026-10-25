@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Reflection 5: Shorting, KOLs, and the Limits of AI — Why 'What NOT to Buy' May Be AI's Best Use"
-date: 2026-10-25
+title: "Shorting, KOLs, and the Limits of AI — Why 'What NOT to Buy' May Be AI's Best Use"
+date: 2026-07-25
 tags: [reflections, short-selling, ai, information-friction, risk-management]
 ---
 
