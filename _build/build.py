@@ -31,7 +31,7 @@ HOME_HTML = ROOT / "_build" / "home.html"
 SECTIONS = [
     ("apps",         "Apps Blueprints",  "Product sketches for problems I keep meeting in the wild. Each blueprint covers the pain, the data model, and the smallest useful version."),
     ("ai-investing", "AI-Investing",     "Where AI actually helps an investor — and where it's theatre."),
-    ("aftermath",    "Trade Aftermath",  "Post-mortems of non-mainstream trade ideas — thesis, expression, outcome, lesson. The P&amp;L is the least interesting number."),
+    ("aftermath",    "Ideas",  "Post-mortems of non-mainstream trade ideas — thesis, expression, outcome, lesson. The P&amp;L is the least interesting number."),
     ("journal",      "Thesis Journal",   "The PM track, in public: live theses with explicit invalidation. If I can't write down what would prove me wrong, I don't have a thesis."),
     ("thoughts",     "Personal Thoughts", ""),
 ]
@@ -195,7 +195,7 @@ NAV = """
         <nav class="site-nav">
             <a href="/#apps">Apps</a>
             <a href="/#ai-investing">AI-Investing</a>
-            <a href="/#aftermath">Aftermath</a>
+            <a href="/#aftermath">Ideas</a>
             <a href="/#journal">Journal</a>
             <a href="/#thoughts">Thoughts</a>
             <button id="theme-toggle" aria-label="Toggle dark mode">&#9680;</button>
