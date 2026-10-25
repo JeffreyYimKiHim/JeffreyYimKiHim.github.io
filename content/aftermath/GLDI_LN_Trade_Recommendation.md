@@ -1,8 +1,14 @@
+---
+title: Ways to get Gold Exposure
+date: 2026-10-25
+tag: Gold
+summary: Gold
+status: published
+---
+
 # Trade Recommendation: GLDI LN (IncomeShares Gold+ Yield ETP)
 
-**Status:** CONDITIONAL BUY (income sleeve) — entry deferred pending pre-entry check framework
 **Horizon:** 3 months
-**As of:** 11 September 2026
 **Author's note:** Personal trade recommendation for process demonstration. Not investment advice.
 
 ---
