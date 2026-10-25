@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Open-Source AI Investing Stack: A Buy-Side Field Guide to GitHub's Frontier"
-date: 2026-10-21
+date: 2026-10-17
 categories: [ai-augmented-investing]
 tags: [open-source, github, llm-agents, quant, asset-management]
 ---
