@@ -1,6 +1,6 @@
 ---
 title: "ETF pairs trading, ten years on — a strategy review"
-date: 2026-10-25
+date: 2026-10-01
 tag: ETFs
 summary: Cointegration pairs trading on country ETFs — the EWA–EWC family from Chan's Algorithmic Trading — reviewed against a decade of post-publication evidence. The concept survived; the economics got thinner.
 status: published
