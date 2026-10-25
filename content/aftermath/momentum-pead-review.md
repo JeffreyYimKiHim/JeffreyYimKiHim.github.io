@@ -1,6 +1,6 @@
 ---
 title: "Momentum and PEAD — a strategy review"
-date: 2026-10-25
+date: 2026-08-02
 tag: Momentum
 summary: Time-series and cross-sectional momentum plus post-earnings-announcement drift — reviewed against the crash literature and the 2018–2020 quant winter. The premium persists; the crashes are the tuition.
 status: published
