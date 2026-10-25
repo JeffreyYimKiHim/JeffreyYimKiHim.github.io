@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Unwritten Opportunities: Why the Most Valuable Work Has No Syllabus"
-date: 2026-10-25
+date: 2026-10-11
 categories: [reflections]
 tags: [career, education, AI, entrepreneurship]
 ---
