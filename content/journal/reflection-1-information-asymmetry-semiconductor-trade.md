@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Information Asymmetry Is a Cruel Thing — Lessons from the Semiconductor Supercycle"
-date: 2026-08-25
+date: 2026-08-02
 tags: [reflections, semiconductors, information-asymmetry, crowded-trades, memory-chips]
 ---
 
