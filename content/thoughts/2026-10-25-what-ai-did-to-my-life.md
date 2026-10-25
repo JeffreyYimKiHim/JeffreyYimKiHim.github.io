@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What AI Actually Did to My Life — and What It Will Never Do"
-date: 2026-10-25
+date: 2026-10-16
 categories: [reflections]
 tags: [AI, investing, career, personal-growth]
 ---
