@@ -1,6 +1,6 @@
 ---
 title: Ways to get Gold Exposure
-date: 2026-09-25
+date: 2026-09-18
 tag: Gold
 summary: Finding the Golden Bet
 status: published
