@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reflection 4: The Return of Fundamental Research — When the Tide Goes Out"
+title: "The Return of Fundamental Research — When the Tide Goes Out"
 date: 2026-10-25
 tags: [reflections, fundamentals, valuation, interest-rates, credit-cycle]
 ---
