@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Foundation Models Meet the Order Book: What TradeFM and LOBERT Mean for Asset Managers"
-date: 2026-10-21
+date: 2026-10-03
 categories: [ai-augmented-investing]
 tags: [foundation-models, market-microstructure, tradefm, lobert, asset-management]
 ---
